@@ -6,7 +6,7 @@ export const Content = () => {
   const wallet = useWallet();
   return (
     <Grid item container justifyContent="center">
-      <p className="welcome">Hi {wallet?.publicKey?.toBase58()}!</p>
+      <p className="welcome">{wallet?.publicKey?.toBase58()}</p>
     </Grid>
   );
 };

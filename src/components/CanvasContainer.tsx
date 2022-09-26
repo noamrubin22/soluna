@@ -12,7 +12,7 @@ interface CanvasContainerProps {
 
 const CanvasContainer: React.FC<CanvasContainerProps> = ({
   position = [-15, 1, 10],
-  fov = 9,
+  fov = 11,
   rotateSpeed = 1,
   zoom = 1,
   children,
@@ -25,7 +25,7 @@ const CanvasContainer: React.FC<CanvasContainerProps> = ({
         fov,
         zoom,
       }}
-      className="diamond"
+      className="moon"
     >
       <ambientLight intensity={1} />
       <directionalLight position={[0, 5, 5]} />
