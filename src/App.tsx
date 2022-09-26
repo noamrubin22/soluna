@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Grid } from "@mui/material";
+import "./App.css";
+import { Wallet } from "./components/Wallet";
+require("@solana/wallet-adapter-react-ui/styles.css");
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid
+      container
+      justifyContent={"center"}
+      alignContent="center"
+      flexDirection="row"
+      className="container"
+      spacing={3}
+    >
+      <Grid
+        item
+        container
+        xs={12}
+        alignContent="center"
+        justifyContent="center"
+      >
+        <img src="/full-moon.png" alt="Full moon" width="40%" />
+      </Grid>
+      <Grid item container xs={12} justifyContent="center">
+        <Wallet />
+      </Grid>
+    </Grid>
   );
 }
 
