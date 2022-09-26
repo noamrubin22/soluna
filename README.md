@@ -2,6 +2,8 @@
 
 This project is used for practicing developing on the SOLANA blockchain. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and inspired by the tutorial of [Daniel Kelleher - solana for beginners](https://github.com/dankelleher/solana-for-beginners).
 
+![screenshot](https://github.com/noamrubin22/soluna/blob/main/public/Screenshot%202022-09-26%20at%2018.04.45.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
